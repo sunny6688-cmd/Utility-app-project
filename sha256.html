@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/utilitystyle.css">
+    <script src="./sha256.js"></script>
+</head>
+<body>
+    <div class="navbar">
+        <div class="dropdown">
+          <button class="dropbtn">Encoder Decoder
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="/encode_decode.html">Base-64</a>
+            <a href="/md5hash.html">MD5 Hash</a>
+            <a href="/sha1hash.html">SHA-1 Hash</a>
+            <a href="/sha256.html">SHA-256 Hash</a>
+            <a href="/sha512.html">SHA-512 Hash</a>
+          </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Rgb-Hex Convertor
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="/rgb-hex_convertor.html">Rgb->Hex</a>
+              <a href="/hex-rgb_convertor.html">Hex->Rgb</a>
+              <a href="#">Rgb->Hex Colour Convertor</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Timestamp Converter
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#">Unix Time Stamp</a>
+              <a href="#">Current Millis</a>
+              <a href="#">Epoch Converter</a>
+              <a href="#">Timezone Converter</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Unit Converters
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#">Common Converters</a>
+              <a href="#">Unit of Measure Converter</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Number Base Converters
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#">Binary To Decimal Converter</a>
+              <a href="#">Binary To Hex Converter</a>
+              <a href="#">Binary To Octal Converter</a>
+              <a href="#">Decimal To Binary Converter</a>
+              <a href="#">Decimal To Hex Converter</a>
+              <a href="#">Decimal To Octal Converter</a>
+              <a href="#">Hex To Binary Converter</a>
+              <a href="#">Hex To Decimal Converter</a>
+              <a href="#">Hex To Octal Converter</a>
+              <a href="#">Octal To Binary Converter</a>
+              <a href="#">Octal To Decimal Converter</a>
+              <a href="#">Octal To Hex Converter</a>
+            </div>
+        </div>
+    </div>
+    <h1> Utility Application </h1>
+    <label for="sha256input">Input String : <br></label>
+    <p><textarea name="input" id="sha256input" cols="50" rows="10"></textarea></p>
+    <button id="sha256button" type="button">SHA256Hash-Generator</button><br><br>
+    <label for="sha256output">SHA256 Hash Output :</label>
+    <p><textarea disabled name="output" id="sha256output" cols="50" rows="10"></textarea></p>
+    <div class="info">
+        <h2>What is SHA-256?</h2>
+        <p>The above SHA-256 generator allows you to easily compute hashes and checksums, but what are they exactly? <br> SHA256 is a part of the SHA-2 (Secure Hash Algorithm 2) family of one-way cryptographic functions, developed in 2001 by the United States National Security Agency (NSA). <br> Hashing functions are cryptographic devices that take as input any string of characters or a file of any type, and then output a computed collision-resistant hash. <br> Collision resistance means that nobody should be able to find two different inputs that produce the same hash.</p>
+        <h3>Examples.</h3>
+        <table class="exampletable">
+            <tr>
+                <th>Input</th>
+                <th>Computed Hash</th>
+            </tr>
+            <tr>
+                <td>
+                    The quick brown fox jumps over the lazy dog
+                </td>
+                <td>d7a8fbb307d7809469ca9a <br>
+                    bcb0082e4f8d5651e46d3c <br>
+                    db762d02d0bf37c9e592
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    The quick brown fox jumps over th<u><b>a</b></u> lazy dog
+                </td>
+                <td>
+                    77125ec2f977a62aaca3bf <br>
+                    bfd0834dd52d1b0cd19976 <br>
+                    4994a4d57edc855d15f4
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
